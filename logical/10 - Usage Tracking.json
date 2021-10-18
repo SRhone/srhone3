@@ -1,0 +1,22 @@
+{
+  "businessModel" : {
+    "name" : "10 - Usage Tracking",
+    "disable" : false,
+    "joins" : [ {
+      "leftTable" : "logicalTable:10 - Usage Tracking.UT L Query Facts",
+      "rightTable" : "logicalTable:10 - Usage Tracking.WS Objects Attributes",
+      "joinType" : "FULL_OUTER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:10 - Usage Tracking.UT L Query Facts",
+      "rightTable" : "logicalTable:10 - Usage Tracking.UT Phys SQL",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:10 - Usage Tracking.UT L Query Facts",
+      "rightTable" : "logicalTable:10 - Usage Tracking.UT Navigation",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

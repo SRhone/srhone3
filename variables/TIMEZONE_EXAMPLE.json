@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "TIMEZONE_EXAMPLE",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:10 - System DB (ORCL).SampleApp Init Blocks",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT 'Etc/Greenwich' FROM DUAL"
+    } ],
+    "variables" : [ {
+      "name" : "TIMEZONE_VALUE",
+      "value" : "'Etc/Greenwich'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false,
+      "defaultValueType" : "TEXT"
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

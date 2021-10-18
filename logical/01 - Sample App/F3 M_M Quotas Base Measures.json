@@ -1,0 +1,33 @@
+{
+  "logicalTable" : {
+    "name" : "F3 M:M Quotas Base Measures",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "8- Quota Amount",
+      "dataType" : "INT",
+      "writeable" : true,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LTS1 Fact Quotas",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.F30 Facts Quotas.VALUE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Total Orders"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "LTS1 Fact Quotas",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:01 - Sample App Data (ORCL).BISAMPLE.F30 Facts Quotas" ]
+      },
+      "dataGranularity" : [ "logicalLevel:01 - Sample App.F5 Time Series and Level Based Examples.150  Rev  (Full Mth Sum)", "logicalLevel:01 - Sample App.D4 Offices and Channels (M:M Joins).N6k  Channel Key", "logicalLevel:01 - Sample App.D1 Products (Level Based Hier).P10  Product (Dble Column)" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

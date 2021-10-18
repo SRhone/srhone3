@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "Custom Visibility Companies",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:10 - System DB (ORCL).SampleApp Init Blocks",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT\r\n'VISIBILITY_COMPANIES',\r\nIDS\r\nFROM SAMP_USERS_VIS\r\nWHERE upper(USERID)=upper(':USER')\r\nAND TYPE = 'COMPANY'"
+    } ],
+    "variables" : [ {
+      "name" : "VISIBILITY_COMPANIES",
+      "value" : "'none'",
+      "enableUsersToSetValue" : true,
+      "securitySensitive" : false,
+      "defaultValueType" : "TEXT"
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : true,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : false
+  }
+}

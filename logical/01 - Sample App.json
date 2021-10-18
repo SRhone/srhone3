@@ -1,0 +1,254 @@
+{
+  "businessModel" : {
+    "name" : "01 - Sample App",
+    "description" : "\r\n",
+    "disable" : false,
+    "joins" : [ {
+      "leftTable" : "logicalTable:01 - Sample App.F3 M:M Quotas Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D4 Offices and Channels (M:M Joins)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F93 Actions Entries",
+      "rightTable" : "logicalTable:01 - Sample App.D7 Orders (Facts Attributes)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.M1 Segment Cache Customers",
+      "rightTable" : "logicalTable:01 - Sample App.D6a Customers (SCD ViewQuery)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F6 Logical Calculations Examples",
+      "rightTable" : "logicalTable:01 - Sample App.D7 Orders (Facts Attributes)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D7 Orders (Facts Attributes)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D6 Customers (Snowflakes)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D1 Products (Level Based Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D8 Data Mining Cust LTV Tree Nodes",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D8 Data Mining Cust LTV Tree Nodes",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F2 Fragmented Measures Targets",
+      "rightTable" : "logicalTable:01 - Sample App.D1 Products (Level Based Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D6b Customers (SCD Session)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D0 Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D6a Customers (SCD ViewQuery)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F91 SalesRep Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D5 Sales Rep (Parent Child Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D2 Products (Ragged SkipLevels Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D7 Orders (Facts Attributes)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F81 Database Functions Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D0 Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F3 M:M Quotas Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D0 Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F81 Database Functions Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D3 Offices",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D5 Sales Rep (Parent Child Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F3 M:M Quotas Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D2 Products (Ragged SkipLevels Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F2 Fragmented Measures Targets",
+      "rightTable" : "logicalTable:01 - Sample App.D0 Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D4 Offices and Channels (M:M Joins)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F81 Database Functions Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D1 Products (Level Based Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F4 Headcount Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D0 Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D2 Products (Ragged SkipLevels Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F5 Time Series and Level Based Examples",
+      "rightTable" : "logicalTable:01 - Sample App.D7 Orders (Facts Attributes)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D6 Customers (Snowflakes)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D6a Customers (SCD ViewQuery)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D6b Customers (SCD Session)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.M03 Mktg Saved Res Set Customers",
+      "rightTable" : "logicalTable:01 - Sample App.M02 Mktg Res Set Headers Customers",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D3 Offices",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F3 M:M Quotas Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D1 Products (Level Based Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F7 Datamining Regression Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D0 Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D3 Offices",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D7b Orders (TimeZone Converted)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F2 Fragmented Measures Targets",
+      "rightTable" : "logicalTable:01 - Sample App.D3 Offices",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F80 Data Mining LTV Tree Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D6 Customers (Snowflakes)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F90 Time Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D0 Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D1 Products (Level Based Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE",
+      "drivingTable" : "logicalTable:01 - Sample App.D1 Products (Level Based Hier)"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F80 Data Mining LTV Tree Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D6a Customers (SCD ViewQuery)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F0 Sales Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D5 Sales Rep (Parent Child Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F80 Data Mining LTV Tree Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D8 Data Mining Cust LTV Tree Nodes",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F81 Database Functions Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D2 Products (Ragged SkipLevels Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F4 Headcount Base Measures",
+      "rightTable" : "logicalTable:01 - Sample App.D3 Offices",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.M1 Segment Cache Customers",
+      "rightTable" : "logicalTable:01 - Sample App.D6 Customers (Snowflakes)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F2 Fragmented Measures Targets",
+      "rightTable" : "logicalTable:01 - Sample App.D2 Products (Ragged SkipLevels Hier)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.M1 Segment Cache Customers",
+      "rightTable" : "logicalTable:01 - Sample App.D6b Customers (SCD Session)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "leftTable" : "logicalTable:01 - Sample App.F80 Data Mining LTV Tree Facts",
+      "rightTable" : "logicalTable:01 - Sample App.D6b Customers (SCD Session)",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

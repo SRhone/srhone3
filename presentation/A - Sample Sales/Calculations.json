@@ -1,0 +1,11 @@
+{
+  "presentationTable" : {
+    "name" : "Calculations",
+    "description" : "Following folders contain various calculated metrics",
+    "alternateNames" : [ "Calculated Facts" ],
+    "localization" : {
+      "localizationKey" : "Calculations",
+      "nameVariable" : "VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Calculated_Facts)"
+    }
+  }
+}

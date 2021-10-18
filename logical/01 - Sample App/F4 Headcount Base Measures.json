@@ -1,0 +1,46 @@
+{
+  "logicalTable" : {
+    "name" : "F4 Headcount Base Measures",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "9- Full Time Empl  (Beg Period)",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LTS1 Facts Headcount",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.F50 Facts Headcount.Fte" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "9- Full Time Empl  (End Period)",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LTS1 Facts Headcount",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.F50 Facts Headcount.Fte" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "LTS1 Facts Headcount",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:01 - Sample App Data (ORCL).BISAMPLE.F50 Facts Headcount" ]
+      },
+      "dataGranularity" : [ "logicalLevel:01 - Sample App.D0 Time.T00 Calendar Date", "logicalLevel:01 - Sample App.D3 Offices.D1  Office" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

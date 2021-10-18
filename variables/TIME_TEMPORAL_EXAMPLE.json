@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "TIME_TEMPORAL_EXAMPLE",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:10 - System DB (ORCL).SampleApp Init Blocks",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT '01-JAN-13' FROM DUAL"
+    } ],
+    "variables" : [ {
+      "name" : "TIME_TEMPORAL_ASOF",
+      "value" : "'01-JAN-16'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false,
+      "defaultValueType" : "TEXT"
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

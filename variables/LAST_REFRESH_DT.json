@@ -1,0 +1,23 @@
+{
+  "initBlock" : {
+    "name" : "LAST_REFRESH_DT",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:10 - System DB (ORCL).SampleApp Init Blocks",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT max(BILL_DAY_DT) FROM samp_revenue_f"
+    } ],
+    "variables" : [ {
+      "name" : "LAST_REFRESH_DT",
+      "description" : "Used to artifically set the last refresh date of datasources",
+      "value" : "DATE '2015-12-30' ",
+      "enableUsersToSetValue" : true,
+      "securitySensitive" : false,
+      "defaultValueType" : "DATE"
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

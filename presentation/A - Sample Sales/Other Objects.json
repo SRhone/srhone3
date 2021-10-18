@@ -1,0 +1,11 @@
+{
+  "presentationTable" : {
+    "name" : "Other Objects",
+    "description" : "Following folders contain various calculated metrics",
+    "alternateNames" : [ "Calculated Facts#1" ],
+    "localization" : {
+      "localizationKey" : "Other Objects",
+      "nameVariable" : "VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Calculated_Facts)"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "Verify DUAL Cube Name (=BISAMPLE)",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:10 - System DB (ORCL).SampleApp Init Blocks",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "Select 'BISAMPLE' From Dual"
+    } ],
+    "variables" : [ {
+      "name" : "CUBE_NAME",
+      "value" : "'BISAMPLE'",
+      "enableUsersToSetValue" : true,
+      "securitySensitive" : false,
+      "defaultValueType" : "TEXT"
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

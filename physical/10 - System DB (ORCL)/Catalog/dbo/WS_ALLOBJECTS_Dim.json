@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "WS_ALLOBJECTS_Dim",
+    "sourceTable": "physicalTable:10 - System DB (ORCL).Catalog.dbo.WS_ALLOBJECTS",
+    "additionalKeys": [
+      [
+        "PATH"
+      ]
+    ]
+  }
+}
